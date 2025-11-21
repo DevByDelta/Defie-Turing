@@ -1,7 +1,7 @@
 """
 Problème 1 : Somme de tous les multiples de 5 ou de 7 inférieurs à 2013
 Idée : A l'aide de boucle faire la somme des multiples de 5 puis de 7 inférieurs à 2013 puis enlever les doublons
-Complexité :
+Complexité : O(n) avec n = limit
 Durée environ : 0.000124 s
 """
 
