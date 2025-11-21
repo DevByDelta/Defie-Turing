@@ -1,19 +1,21 @@
 """
-Problème 1 : Somme de tous les multiples de 5 ou de 7 inférieurs à 2013
-Idée : A l'aide d'une boucle for faire la somme des multiples de 5 puis de 7 inférieurs à 2013 puis enlever les doublons
-Complexité : O(n) avec n = limit
-Durée environ : 0.000033 s
+Problème 1 : Somme de tous les multiples de 5 ou de 7 inférieurs à 2013.
+Idée : A l'aide de la somme des termes de la suite arithmétique formé par les multiples.
+Complexité : O(1)
+Durée environ : 0.000011 s
 """
 
 from modules.timer import timer
 
 def sum_multiples(n, limit):
     """Calcul la somme des multiples de n inférieur à limit"""
-    s = 0
-    # multiple < limit signifie multiplicateur (i) =< limit div n
-    for i in range(1, (limit // n) + 1):
-        s += n * i
-    return s
+    # Suite arithmétique de premier terme 'n' exemple 5
+    # De dernier terme n * i_limite où i_limite est le multiplicateur maximal
+    # De nombre de terme i_limite
+    premier_terme = n
+    dernier_terne = n * (limit // n)
+    nombre_termes = limit // n
+    return nombre_termes * (premier_terme + dernier_terne) // 2
 
 def calc_sum_multiples2(n1, n2, limit):
     return sum_multiples(n1, limit) + sum_multiples(n2, limit) - sum_multiples(n1*n2, limit)
