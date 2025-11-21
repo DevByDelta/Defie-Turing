@@ -18,9 +18,10 @@ def sum_multiples(n, limit):
     return nombre_termes * (premier_terme + dernier_terne) // 2
 
 def calc_sum_multiples2(n1, n2, limit):
+    """Somme des multiples de 'n1' ou de 'n2' inférieur à 'limit'"""
     return sum_multiples(n1, limit) + sum_multiples(n2, limit) - sum_multiples(n1*n2, limit)
 
 result, durre = timer(calc_sum_multiples2, 5, 7, 2013)
 
-print(f"Fonction exécuté en {durre:.6f} s & résultat = {result}")
+print(f"Fonction exécutée en {durre:.6f} s & résultat = {result}")
 
