@@ -21,8 +21,11 @@ Chaque fichier correspond à la solution d’un problème :
 Problème :
 Idée :
 Complexité :
-Temps :
+Durée environ : 
 """
+
+### Modules
+- timer est une fonction qui permet de calculer le temps efectuer par une fonction. Elle retourne le résultat de la fonction et la durée.
 
 
 ## Contact
