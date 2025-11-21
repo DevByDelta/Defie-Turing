@@ -5,7 +5,7 @@ Complexité : O(1)
 Durée environ : 0.000011 s
 """
 
-from modules.timer import test_rapide
+from modules import timer
 
 def sum_multiples(n, limit):
     """Calcul la somme des multiples de n inférieur à limit"""
@@ -22,4 +22,4 @@ def calc_sum_multiples2(n1, n2, limit):
     return sum_multiples(n1, limit) + sum_multiples(n2, limit) - sum_multiples(n1*n2, limit)
 
 
-test_rapide(calc_sum_multiples2, 5, 7, 2013)
+timer.test_rapide(calc_sum_multiples2, 5, 7, 2013)
